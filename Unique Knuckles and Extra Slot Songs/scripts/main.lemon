@@ -1,0 +1,60 @@
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+    if (sfxId == 0x02)
+    { 
+        if (Mods.isModActive("Extra Slot Mighty") && (u8[0xffffE654] == 1))
+            return "02_m"
+    }
+    if (sfxId == 0x03)
+    { 
+        if (Mods.isModActive("Extra Slot Ray") && (u8[0xffffE654] == 2))
+            return "03_r"
+    }
+    else if (sfxId == 0x05)
+    { 
+        if (isMainCharacter(CHARACTER_KNUCKLES)) 
+            return "05_k"
+        else if (Mods.isModActive("Extra Slot Amy") && (u8[0xffffE654] == 3))
+            return "05_a"
+    }
+    else if (sfxId == 0x07)
+    { 
+        if (isMainCharacter(CHARACTER_KNUCKLES)) 
+            return "07_k"
+    }
+    else if (sfxId == 0x09)
+    { 
+        if (Mods.isModActive("Extra Slot Ray") && (u8[0xffffE654] == 2))
+            return "09_r"
+    }
+    else if (sfxId == 0x0b)
+    { 
+        if (Mods.isModActive("Extra Slot 3D2D Shadow") && (u8[0xffffE654] == 5))
+            return "0B_sh"
+    }
+    else if (sfxId == 0x0e)
+    { 
+        if (isMainCharacter(CHARACTER_KNUCKLES)) 
+            return "0E_k"
+    }
+    else if (sfxId == 0x13)
+    { 
+        if (isMainCharacter(CHARACTER_KNUCKLES)) 
+            return "13_k"
+    }
+    else if (sfxId == 0x14)
+    { 
+        if (Mods.isModActive("Extra Slot Mighty") && (u8[0xffffE654] == 1))
+            return "14_m"
+        else if (Mods.isModActive("Extra Slot 3D2D Shadow") && (u8[0xffffE654] == 5))
+            return "14_sh"
+    }
+    else if (sfxId == 0x15)
+    { 
+        if (isMainCharacter(CHARACTER_KNUCKLES)) 
+            return "15_k"
+        else if (Mods.isModActive("Extra Slot Amy") && (u8[0xffffE654] == 3))
+            return "15_a"
+    }
+    return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}

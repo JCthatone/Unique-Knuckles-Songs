@@ -1,0 +1,15 @@
+{
+	"02_m": { "File": "Angel Island Zone Act 2 Mighty.ogg", "Type": "Music", "LoopStart": "00000"},
+	"03_r": { "File": "Hydrocity Zone Act 1 Ray.ogg", "Type": "Music", "LoopStart": "00000"},
+	"05_k": { "File": "Marble Garden Zone Act 1 Knux.ogg", "Type": "Music", "LoopStart": "777955"},
+	"05_a": { "File": "Marble Garden Zone Act 1 Amy.ogg", "Type": "Music", "LoopStart": "00000"},
+	"07_k": { "File": "Carnival Night Zone Act 1 Knux.ogg", "Type": "Music", "LoopStart": "00000"},
+	"09_r": { "File": "Flying Battery Act 1 Ray.ogg", "Type": "Music", "LoopStart": "4065984"},
+	"0B_sh": { "File": "Ice Cap Zone Act 1 Shadow.ogg", "Type": "Music", "LoopStart": "0000000"},
+	"0E_k": { "File": "Launch Base Zone Act 2 Knuckles.ogg", "Type": "Music", "LoopStart": "00000"},
+	"13_k": { "File": "Lava Reef Zone Act 1 Knux.ogg", "Type": "Music", "LoopStart": "397267"},
+	"14_m": { "File": "Lava Reef Act 2 Mighty.ogg", "Type": "Music", "LoopStart": "7323799"},
+	"14_sh": { "File": "Hidden Palace Zone Shadow.ogg", "Type": "Music", "LoopStart": "52145"},
+	"15_k": { "File": "Sky Sanctuary Zone Knux.ogg", "Type": "Music", "LoopStart": "000000"},
+	"15_a": { "File": "Sky Sanctuary Zone Amy.ogg", "Type": "Music", "LoopStart": "1885347"}
+}
