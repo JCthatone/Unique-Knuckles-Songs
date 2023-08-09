@@ -12,14 +12,14 @@ function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegTyp
     }
     else if (sfxId == 0x05)
     { 
-        if (isMainCharacter(CHARACTER_KNUCKLES)) 
+        if (isMainCharacter(CHARACTER_KNUCKLES) && u8[0xffffE654] == 0) 
             return "05_k"
         else if (Mods.isModActive("Extra Slot Amy") && (u8[0xffffE654] == 3))
             return "05_a"
     }
     else if (sfxId == 0x07)
     { 
-        if (isMainCharacter(CHARACTER_KNUCKLES)) 
+        if (isMainCharacter(CHARACTER_KNUCKLES) && u8[0xffffE654] == 0) 
             return "07_k"
     }
     else if (sfxId == 0x09)
@@ -34,12 +34,12 @@ function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegTyp
     }
     else if (sfxId == 0x0e)
     { 
-        if (isMainCharacter(CHARACTER_KNUCKLES)) 
+        if (isMainCharacter(CHARACTER_KNUCKLES) && u8[0xffffE654] == 0) 
             return "0E_k"
     }
     else if (sfxId == 0x13)
     { 
-        if (isMainCharacter(CHARACTER_KNUCKLES)) 
+        if (isMainCharacter(CHARACTER_KNUCKLES) && u8[0xffffE654] == 0) 
             return "13_k"
     }
     else if (sfxId == 0x14)
@@ -51,7 +51,7 @@ function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegTyp
     }
     else if (sfxId == 0x15)
     { 
-        if (isMainCharacter(CHARACTER_KNUCKLES)) 
+        if (isMainCharacter(CHARACTER_KNUCKLES) && u8[0xffffE654] == 0) 
             return "15_k"
         else if (Mods.isModActive("Extra Slot Amy") && (u8[0xffffE654] == 3))
             return "15_a"
