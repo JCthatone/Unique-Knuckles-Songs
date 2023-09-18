@@ -29,7 +29,7 @@ function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegTyp
     }
     else if (sfxId == 0x0b)
     { 
-        if (Mods.isModActive("Extra Slot 3D2D Shadow") && (u8[0xffffE654] == 5))
+        if (Mods.isModActive("Extra Slot 3D in 2D Shadow") && (u8[0xffffE654] == 5))
             return "0B_sh"
     }
     else if (sfxId == 0x0e)
@@ -46,7 +46,7 @@ function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegTyp
     { 
         if (Mods.isModActive("Extra Slot Mighty") && (u8[0xffffE654] == 1))
             return "14_m"
-        else if (Mods.isModActive("Extra Slot 3D2D Shadow") && (u8[0xffffE654] == 5))
+        else if (Mods.isModActive("Extra Slot 3D in 2D Shadow") && (u8[0xffffE654] == 5))
             return "14_sh"
     }
     else if (sfxId == 0x15)
